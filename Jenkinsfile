@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install yarn -g && yarn' 
+                sh 'yarn && yarn run compile && yarn run compile-web' 
             }
         }
     }

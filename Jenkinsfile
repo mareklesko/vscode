@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'nikolaik/python-nodejs:python3.9-nodejs12-alpine' 
+            image 'mcr.microsoft.com/vscode/devcontainers/repos/microsoft/vscode:dev' 
             args '-p 3000:3000' 
         }
     }
